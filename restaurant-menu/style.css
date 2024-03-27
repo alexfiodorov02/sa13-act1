@@ -1,0 +1,71 @@
+header, footer, h2 {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Brush Script MT', cursive; margin:auto; 
+    font-size: 4em;
+}
+
+h2 {
+    color: #B83C08;
+}
+
+h4 {
+    font-style: italic;
+}
+
+body {
+    font-size: 1em;
+    font-family: 'Georgia', serif; 
+    margin:auto;
+    background-color: antiquewhite;
+    color: black;
+}
+
+div {
+    margin: 0.625em;
+    padding: 1.25em;
+}
+
+.outer-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.875em;
+}
+
+.menu-border {
+    width: 60%;
+    height: auto;
+    padding: 0.625em;
+    border: 0.3125em solid #B83C08;
+    word-wrap: normal;
+    text-align: left;
+    margin: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 12.5em 21.875em 3.125em;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item {
+    position: relative;
+    height: 3.75em;
+    align-self: start;
+}
+
+span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img {
+    width: 7.5em;
+    height: 6em;
+}

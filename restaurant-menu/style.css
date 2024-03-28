@@ -2,16 +2,16 @@ header, footer, h2 {
     text-align: center;
 }
 
-h1 {
+.title {
     font-family: 'Brush Script MT', cursive; margin:auto; 
     font-size: 4em;
 }
 
-h2 {
+.category {
     color: #B83C08;
 }
 
-h4 {
+.slogan {
     font-style: italic;
 }
 
@@ -26,13 +26,6 @@ body {
 div {
     margin: 0.625em;
     padding: 1.25em;
-}
-
-.outer-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1.875em;
 }
 
 .menu-border {

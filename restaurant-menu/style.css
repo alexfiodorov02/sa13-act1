@@ -3,7 +3,8 @@ header, footer, h2 {
 }
 
 .title {
-    font-family: 'Brush Script MT', cursive; margin:auto; 
+    font-family: 'Brush Script MT', cursive; 
+    margin: auto; 
     font-size: 4em;
 }
 
@@ -15,10 +16,14 @@ header, footer, h2 {
     font-style: italic;
 }
 
+.description {
+    font-style: italic;
+}
+
 body {
     font-size: 1em;
     font-family: 'Georgia', serif; 
-    margin:auto;
+    margin: auto;
     background-color: antiquewhite;
     color: black;
 }
@@ -29,8 +34,8 @@ div {
 }
 
 .menu-border {
-    width: 60%;
-    height: auto;
+    max-width: 60%; /* Change width to maximum */
+    width: auto; /* Make width responsive */
     padding: 0.625em;
     border: 0.3125em solid #B83C08;
     word-wrap: normal;
@@ -40,25 +45,41 @@ div {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 12.5em 21.875em 3.125em;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(12.5em, 1fr)); /* Responsive grid layout */
+    gap: 1em; /* Add gap between grid items */
 }
 
 .grid-item {
     position: relative;
-    height: 3.75em;
     align-self: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 span {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 0.5em; /* Add space between elements */
 }
 
 img {
-    width: 7.5em;
-    height: 6em;
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+}
+
+.price {
+    font-weight: bold; /* Make price bold */
+}
+
+@media screen and (max-width: 768px) {
+    .menu-border {
+        max-width: 80%; /* Adjust maximum width for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 2em; /* Adjust font size for smaller screens */
+    }
+    /* Add any other specific styles for mobile devices */
 }

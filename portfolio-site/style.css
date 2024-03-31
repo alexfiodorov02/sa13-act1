@@ -81,19 +81,14 @@ input[type=submit]:hover {
 }
 
 /* Gallery Styles */
-
 @media (max-width: 767px) {
-  .gallery {
-      display: block;
-  }
-
   .item {
       width: 100%;
   }
 }
 
 .gallery {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* Center the items horizontally */
